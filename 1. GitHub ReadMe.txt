@@ -1,0 +1,75 @@
+Pro-Lite PDF Viewer
+
+A lightweight, high-performance PDF viewer for Windows built with Python. Designed as a "bloat-free" alternative to heavy commercial readers, featuring tabbed browsing, annotation tools, and instant startup times.
+
+Features
+
+⚡ Blazing Fast: Built on the MuPDF engine for instant rendering.
+
+📑 Tabbed Interface: Open multiple documents simultaneously.
+
+🖊️ Annotation Tools: Highlight text (Yellow, Green, Red, Blue, etc.) and an Eraser tool.
+
+🔍 Smart Selection: Hybrid text selection engine (Linear Text & Box Selection).
+
+🚀 Direct Launch: Supports "Open With" integration in Windows Explorer.
+
+🌐 Web Ready: Open PDFs directly from URLs.
+
+Installation
+
+Option 1: Download .EXE
+
+Check the Releases page for the standalone Windows executable. No installation required—just download and run.
+
+Option 2: Run from Source
+
+Clone this repository.
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Run the application:
+
+python pdf_viewer.py
+
+
+Build it Yourself
+
+To create the standalone .exe file:
+
+Install PyInstaller: pip install pyinstaller
+
+Run the build command:
+
+pyinstaller --noconsole --onefile --icon=app_icon.ico pdf_viewer.py
+
+
+The executable will appear in the dist folder.
+
+License & Credits
+
+This project is open-source software licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
+
+Third-Party Libraries
+
+This software heavily relies on the following excellent open-source projects:
+
+PyMuPDF: The core PDF rendering engine.
+
+License: GNU AGPL v3.0
+
+Copyright Artifex Software, Inc.
+
+PyQt6: The GUI framework.
+
+License: GNU GPL v3
+
+Requests: HTTP library for downloading web PDFs.
+
+License: Apache 2.0
+
+Note on Commercial Use:
+Because this project links to MuPDF (via PyMuPDF), you cannot use this source code in a closed-source commercial product without first obtaining a commercial license from Artifex Software.
